@@ -1,5 +1,6 @@
 slam_toolbox:
   ros__parameters:
+   use_sim_time: false
 
     # Plugin params
     solver_plugin: solver_plugins::CeresSolver
@@ -18,27 +19,27 @@ slam_toolbox:
 
     # if you'd like to immediately start continuing a map at a given pose
     # or at the dock, but they are mutually exclusive, if pose is given
-    # will use pose
-    map_file_name: /home/dev/dev_ws/my_map_serial
+    # will  pose
+    map_file_name: /home/maker/bm_ws/my-map_serial
     # map_start_pose: [0.0, 0.0, 0.0]
     map_start_at_dock: true
 
     debug_logging: false
     throttle_scans: 1
     transform_publish_period: 0.02 #if 0 never publishes odometry
-    map_update_interval: 5.0
-    resolution: 0.5
-    max_laser_range: 5.0 #for rastering images
+    map_update_interval: 10
+    resolution: 0.3
+    max_laser_range: 12.0 #for rastering images
     minimum_time_interval: 0.5
     transform_timeout: 0.2
-    tf_buffer_duration: 30.
+    tf_buffer_duration: 300.0
     stack_size_to_use: 40000000 #// program needs a larger stack size to serialize large maps
     enable_interactive_mode: true
 
     # General Parameters
     use_scan_matching: true
     use_scan_barycenter: true
-    minimum_travel_distance: 0.5f
+    minimum_travel_distance: 0.5
     minimum_travel_heading: 0.5
     scan_buffer_size: 10
     scan_buffer_maximum_scan_distance: 10.0
@@ -70,4 +71,4 @@ slam_toolbox:
     coarse_angle_resolution: 0.0349        
     minimum_angle_penalty: 0.9
     minimum_distance_penalty: 0.5
-    use_response_expansion: true
+    use_response_expansion: true  # this is my slam_toolbox
