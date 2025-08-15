@@ -1,0 +1,411 @@
+[0.000000] (-) TimerEvent: {}
+[0.003974] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.005345] (serial_motor_demo_msgs) JobQueued: {'identifier': 'serial_motor_demo_msgs', 'dependencies': OrderedDict()}
+[0.005419] (serial_motor_demo) JobQueued: {'identifier': 'serial_motor_demo', 'dependencies': OrderedDict([('serial_motor_demo_msgs', '/home/maker/bm_ws/install/serial_motor_demo_msgs')])}
+[0.005458] (serial_motor_demo_msgs) JobStarted: {'identifier': 'serial_motor_demo_msgs'}
+[0.094208] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.098242] (-) TimerEvent: {}
+[0.158227] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'cmake'}
+[0.168212] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'build'}
+[0.169446] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maker/bm_ws/build/serial_motor_demo_msgs', '--', '-j2', '-l2'], 'cwd': '/home/maker/bm_ws/build/serial_motor_demo_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'maker'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maker'), ('OLDPWD', '/home/maker'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8016'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maker'), ('JOURNAL_STREAM', '8:26976'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maker'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/maker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maker-virtual-machine:@/tmp/.ICE-unix/1666,unix/maker-virtual-machine:/tmp/.ICE-unix/1666'), ('INVOCATION_ID', '4c7fbdbf7bcd4c129e35c8b9bf5724b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1JFQ52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0d19c3ce-c0f8-4fff-b10c-99a43c406314'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maker/bm_ws/build/serial_motor_demo_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.203417] (-) TimerEvent: {}
+[0.209319] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.215827] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[0.216001] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maker/bm_ws/build/my_bot', '--', '-j2', '-l2'], 'cwd': '/home/maker/bm_ws/build/my_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'maker'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maker'), ('OLDPWD', '/home/maker'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8016'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maker'), ('JOURNAL_STREAM', '8:26976'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maker'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/maker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maker-virtual-machine:@/tmp/.ICE-unix/1666,unix/maker-virtual-machine:/tmp/.ICE-unix/1666'), ('INVOCATION_ID', '4c7fbdbf7bcd4c129e35c8b9bf5724b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1JFQ52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0d19c3ce-c0f8-4fff-b10c-99a43c406314'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maker/bm_ws/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.303805] (-) TimerEvent: {}
+[0.405139] (-) TimerEvent: {}
+[0.507796] (-) TimerEvent: {}
+[0.610740] (-) TimerEvent: {}
+[0.713890] (-) TimerEvent: {}
+[0.816412] (-) TimerEvent: {}
+[0.919975] (-) TimerEvent: {}
+[0.975512] (my_bot) CommandEnded: {'returncode': 0}
+[0.992282] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[1.021096] (-) TimerEvent: {}
+[1.076302] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maker/bm_ws/build/my_bot'], 'cwd': '/home/maker/bm_ws/build/my_bot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'maker'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maker'), ('OLDPWD', '/home/maker'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8016'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maker'), ('JOURNAL_STREAM', '8:26976'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maker'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/maker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maker-virtual-machine:@/tmp/.ICE-unix/1666,unix/maker-virtual-machine:/tmp/.ICE-unix/1666'), ('INVOCATION_ID', '4c7fbdbf7bcd4c129e35c8b9bf5724b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1JFQ52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0d19c3ce-c0f8-4fff-b10c-99a43c406314'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maker/bm_ws/build/my_bot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.121803] (-) TimerEvent: {}
+[1.127653] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.135381] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.153936] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/drive_bot.rviz\n'}
+[1.156837] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[1.160098] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[1.161475] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/gazebo_params.yaml\n'}
+[1.169158] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/joystick.yaml\n'}
+[1.176922] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/main.rviz\n'}
+[1.187625] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml\n'}
+[1.189227] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/my_controllers.yaml\n'}
+[1.191717] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/nav2_params.yaml\n'}
+[1.192094] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/twist_mux.yaml\n'}
+[1.192401] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/config/view_bot.rviz\n'}
+[1.197871] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/camera.xacro\n'}
+[1.198363] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/face.xacro\n'}
+[1.198626] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[1.201887] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[1.202803] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/lidar.xacro\n'}
+[1.203168] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[1.206297] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[1.206544] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/description/ros2_control.xacro\n'}
+[1.207050] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/launch/camera.launch.py\n'}
+[1.207261] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py\n'}
+[1.208842] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/launch/online_async_launch.py\n'}
+[1.209138] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/launch/rplidar.launch.py\n'}
+[1.209328] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[1.212228] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[1.213980] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/worlds/obstacles.world\n'}
+[1.218881] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[1.222905] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[1.223163] (-) TimerEvent: {}
+[1.225441] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[1.226838] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[1.230089] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[1.231731] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[1.234713] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[1.235188] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[1.236746] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[1.238716] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[1.239344] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/maker/bm_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[1.324725] (-) TimerEvent: {}
+[1.428849] (-) TimerEvent: {}
+[1.496179] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[1.501301] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[1.505440] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[1.507360] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/my_bot/share/my_bot/package.xml\n'}
+[1.521368] (my_bot) CommandEnded: {'returncode': 0}
+[1.529024] (-) TimerEvent: {}
+[1.532940] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 10%] Built target serial_motor_demo_msgs__rosidl_generator_c\n'}
+[1.630236] (-) TimerEvent: {}
+[1.682453] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 12%] Built target serial_motor_demo_msgs__cpp\n'}
+[1.695088] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[1.730959] (-) TimerEvent: {}
+[1.831848] (-) TimerEvent: {}
+[1.838839] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_serial_motor_demo_msgs\n'}
+[1.932155] (-) TimerEvent: {}
+[1.970349] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 23%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c\n'}
+[2.032679] (-) TimerEvent: {}
+[2.117353] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 34%] Built target serial_motor_demo_msgs__rosidl_typesupport_c\n'}
+[2.133027] (-) TimerEvent: {}
+[2.234085] (-) TimerEvent: {}
+[2.324330] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 44%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.334266] (-) TimerEvent: {}
+[2.435338] (-) TimerEvent: {}
+[2.498086] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 55%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.536685] (-) TimerEvent: {}
+[2.638786] (-) TimerEvent: {}
+[2.657821] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 65%] Built target serial_motor_demo_msgs__rosidl_typesupport_cpp\n'}
+[2.739078] (-) TimerEvent: {}
+[2.807209] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 76%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.839829] (-) TimerEvent: {}
+[2.942068] (-) TimerEvent: {}
+[3.042763] (-) TimerEvent: {}
+[3.143869] (-) TimerEvent: {}
+[3.245215] (-) TimerEvent: {}
+[3.346388] (-) TimerEvent: {}
+[3.447765] (-) TimerEvent: {}
+[3.548172] (-) TimerEvent: {}
+[3.649399] (-) TimerEvent: {}
+[3.750172] (-) TimerEvent: {}
+[3.850774] (-) TimerEvent: {}
+[3.951665] (-) TimerEvent: {}
+[3.963435] (serial_motor_demo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.052152] (-) TimerEvent: {}
+[4.055766] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing serial_motor_demo_msgs.egg-info/PKG-INFO\n'}
+[4.059459] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo_msgs.egg-info/dependency_links.txt\n'}
+[4.061732] (serial_motor_demo_msgs) StdoutLine: {'line': b'writing top-level names to serial_motor_demo_msgs.egg-info/top_level.txt\n'}
+[4.152566] (-) TimerEvent: {}
+[4.253787] (-) TimerEvent: {}
+[4.265815] (serial_motor_demo_msgs) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[4.270078] (serial_motor_demo_msgs) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo_msgs.egg-info/SOURCES.txt'\n"}
+[4.354759] (-) TimerEvent: {}
+[4.381973] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_build_serial_motor_demo_msgs_egg\n'}
+[4.456295] (-) TimerEvent: {}
+[4.534102] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 76%] Built target serial_motor_demo_msgs\n'}
+[4.556618] (-) TimerEvent: {}
+[4.646492] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 78%] Built target serial_motor_demo_msgs__py\n'}
+[4.656843] (-) TimerEvent: {}
+[4.758069] (-) TimerEvent: {}
+[4.858739] (-) TimerEvent: {}
+[4.865935] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 87%] Built target serial_motor_demo_msgs__rosidl_generator_py\n'}
+[4.958997] (-) TimerEvent: {}
+[4.985139] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 91%] Built target serial_motor_demo_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.060316] (-) TimerEvent: {}
+[5.107807] (serial_motor_demo_msgs) StdoutLine: {'line': b'[ 95%] Built target serial_motor_demo_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.160898] (-) TimerEvent: {}
+[5.222789] (serial_motor_demo_msgs) StdoutLine: {'line': b'[100%] Built target serial_motor_demo_msgs__rosidl_typesupport_c__pyext\n'}
+[5.261251] (-) TimerEvent: {}
+[5.263902] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[5.278318] (serial_motor_demo_msgs) JobProgress: {'identifier': 'serial_motor_demo_msgs', 'progress': 'install'}
+[5.278469] (serial_motor_demo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maker/bm_ws/build/serial_motor_demo_msgs'], 'cwd': '/home/maker/bm_ws/build/serial_motor_demo_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'maker'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maker'), ('OLDPWD', '/home/maker'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8016'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'maker'), ('JOURNAL_STREAM', '8:26976'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maker'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/maker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maker-virtual-machine:@/tmp/.ICE-unix/1666,unix/maker-virtual-machine:/tmp/.ICE-unix/1666'), ('INVOCATION_ID', '4c7fbdbf7bcd4c129e35c8b9bf5724b2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.1JFQ52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:0d19c3ce-c0f8-4fff-b10c-99a43c406314'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maker/bm_ws/build/serial_motor_demo_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.313142] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.318696] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.324064] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/rosidl_interfaces/serial_motor_demo_msgs\n'}
+[5.347595] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__functions.h\n'}
+[5.348454] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.h\n'}
+[5.351156] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.h\n'}
+[5.353089] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__functions.h\n'}
+[5.355615] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.h\n'}
+[5.361887] (-) TimerEvent: {}
+[5.371466] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.h\n'}
+[5.386791] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__functions.h\n'}
+[5.387359] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.h\n'}
+[5.391109] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.h\n'}
+[5.395226] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.h\n'}
+[5.395800] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.h\n'}
+[5.398090] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.h\n'}
+[5.398606] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.405325] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.sh\n'}
+[5.406402] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/library_path.dsv\n'}
+[5.409654] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_c.h\n'}
+[5.415776] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[5.421067] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_c.h\n'}
+[5.422005] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.424019] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_c.h\n'}
+[5.425919] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[5.427894] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_c.h\n'}
+[5.429734] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.432796] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__builder.hpp\n'}
+[5.435062] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__struct.hpp\n'}
+[5.437696] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__traits.hpp\n'}
+[5.439848] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__type_support.hpp\n'}
+[5.441244] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__builder.hpp\n'}
+[5.443138] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__struct.hpp\n'}
+[5.446251] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__traits.hpp\n'}
+[5.447125] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__type_support.hpp\n'}
+[5.448864] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__builder.hpp\n'}
+[5.451139] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__struct.hpp\n'}
+[5.453846] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__traits.hpp\n'}
+[5.456759] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__type_support.hpp\n'}
+[5.459097] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/encoder_vals.hpp\n'}
+[5.461114] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_command.hpp\n'}
+[5.462220] (-) TimerEvent: {}
+[5.463253] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/motor_vels.hpp\n'}
+[5.465099] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.468436] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.471201] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.472166] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.475883] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.477779] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/encoder_vals__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.479836] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.481744] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/include/serial_motor_demo_msgs/serial_motor_demo_msgs/msg/detail/motor_vels__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.483674] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.sh\n'}
+[5.486833] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/pythonpath.dsv\n'}
+[5.491636] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.493809] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.495718] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.497740] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.510968] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/__init__.py\n'}
+[5.514285] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.514542] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.516724] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/_serial_motor_demo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.519668] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/libserial_motor_demo_msgs__rosidl_generator_py.so\n'}
+[5.523649] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/__init__.py\n'}
+[5.526189] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals.py\n'}
+[5.529563] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_encoder_vals_s.c\n'}
+[5.543228] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command.py\n'}
+[5.545659] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_command_s.c\n'}
+[5.546361] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_vels.py\n'}
+[5.548105] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg/_motor_vels_s.c\n'}
+[5.550109] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.553978] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.555882] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.558815] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.560722] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.562842] (-) TimerEvent: {}
+[5.563913] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/serial_motor_demo_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.569066] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.idl\n'}
+[5.572327] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.idl\n'}
+[5.574381] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.idl\n'}
+[5.576771] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorCommand.msg\n'}
+[5.579264] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/MotorVels.msg\n'}
+[5.581842] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/msg/EncoderVals.msg\n'}
+[5.584683] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/package_run_dependencies/serial_motor_demo_msgs\n'}
+[5.586476] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/parent_prefix_path/serial_motor_demo_msgs\n'}
+[5.588622] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.sh\n'}
+[5.592973] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/ament_prefix_path.dsv\n'}
+[5.595233] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.sh\n'}
+[5.597421] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/environment/path.dsv\n'}
+[5.604218] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.bash\n'}
+[5.605738] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.sh\n'}
+[5.607670] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.zsh\n'}
+[5.609264] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/local_setup.dsv\n'}
+[5.610377] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.dsv\n'}
+[5.646394] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/ament_index/resource_index/packages/serial_motor_demo_msgs\n'}
+[5.649240] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.653036] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.654662] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.656334] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.657149] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.658640] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.660212] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.662361] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig.cmake\n'}
+[5.663217] (-) TimerEvent: {}
+[5.664088] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgsConfig-version.cmake\n'}
+[5.666295] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/package.xml\n'}
+[5.673480] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_c.so\n'}
+[5.679057] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.684008] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.686459] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_c.so\n'}
+[5.694642] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.697885] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.699598] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_typesupport_cpp.so\n'}
+[5.763599] (-) TimerEvent: {}
+[5.864492] (-) TimerEvent: {}
+[5.867288] (serial_motor_demo_msgs) StdoutLine: {'line': b"Listing '/home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs'...\n"}
+[5.868002] (serial_motor_demo_msgs) StdoutLine: {'line': b"Listing '/home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages/serial_motor_demo_msgs/msg'...\n"}
+[5.883612] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/lib/libserial_motor_demo_msgs__rosidl_generator_py.so\n'}
+[5.895316] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport.cmake\n'}
+[5.895884] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.900231] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.901168] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.903831] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.905405] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.910466] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.912554] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.914902] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.920084] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.920743] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.924366] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.925409] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.928458] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.929708] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/serial_motor_demo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.932232] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.933304] (serial_motor_demo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/maker/bm_ws/install/serial_motor_demo_msgs/share/serial_motor_demo_msgs/cmake/export_serial_motor_demo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.943444] (serial_motor_demo_msgs) CommandEnded: {'returncode': 0}
+[5.964768] (-) TimerEvent: {}
+[6.036419] (serial_motor_demo_msgs) JobEnded: {'identifier': 'serial_motor_demo_msgs', 'rc': 0}
+[6.040789] (serial_motor_demo) JobStarted: {'identifier': 'serial_motor_demo'}
+[6.112879] (-) TimerEvent: {}
+[6.214690] (-) TimerEvent: {}
+[6.316778] (-) TimerEvent: {}
+[6.417824] (-) TimerEvent: {}
+[6.518718] (-) TimerEvent: {}
+[6.620803] (-) TimerEvent: {}
+[6.723848] (-) TimerEvent: {}
+[6.824676] (-) TimerEvent: {}
+[6.927655] (-) TimerEvent: {}
+[7.028645] (-) TimerEvent: {}
+[7.129806] (-) TimerEvent: {}
+[7.230620] (-) TimerEvent: {}
+[7.332199] (-) TimerEvent: {}
+[7.433228] (-) TimerEvent: {}
+[7.534071] (-) TimerEvent: {}
+[7.635047] (-) TimerEvent: {}
+[7.736662] (-) TimerEvent: {}
+[7.837922] (-) TimerEvent: {}
+[7.940608] (-) TimerEvent: {}
+[8.041264] (-) TimerEvent: {}
+[8.144461] (-) TimerEvent: {}
+[8.247795] (-) TimerEvent: {}
+[8.348819] (-) TimerEvent: {}
+[8.449763] (-) TimerEvent: {}
+[8.550701] (-) TimerEvent: {}
+[8.651958] (-) TimerEvent: {}
+[8.753618] (-) TimerEvent: {}
+[8.854236] (-) TimerEvent: {}
+[8.955310] (-) TimerEvent: {}
+[9.056166] (-) TimerEvent: {}
+[9.157684] (-) TimerEvent: {}
+[9.258686] (-) TimerEvent: {}
+[9.360616] (-) TimerEvent: {}
+[9.469775] (-) TimerEvent: {}
+[9.570805] (-) TimerEvent: {}
+[9.672091] (-) TimerEvent: {}
+[9.772732] (-) TimerEvent: {}
+[9.873870] (-) TimerEvent: {}
+[9.974621] (-) TimerEvent: {}
+[10.075783] (-) TimerEvent: {}
+[10.176859] (-) TimerEvent: {}
+[10.278767] (-) TimerEvent: {}
+[10.381258] (-) TimerEvent: {}
+[10.484970] (-) TimerEvent: {}
+[10.587442] (-) TimerEvent: {}
+[10.688861] (-) TimerEvent: {}
+[10.789943] (-) TimerEvent: {}
+[10.890779] (-) TimerEvent: {}
+[10.991779] (-) TimerEvent: {}
+[11.092929] (-) TimerEvent: {}
+[11.193783] (-) TimerEvent: {}
+[11.295086] (-) TimerEvent: {}
+[11.396593] (-) TimerEvent: {}
+[11.497683] (-) TimerEvent: {}
+[11.598366] (-) TimerEvent: {}
+[11.698960] (-) TimerEvent: {}
+[11.799605] (-) TimerEvent: {}
+[11.901208] (-) TimerEvent: {}
+[11.917681] (serial_motor_demo) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/maker/bm_ws/build/serial_motor_demo/build', '--no-deps', 'symlink_data'], 'cwd': '/home/maker/bm_ws/build/serial_motor_demo', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'maker', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/maker/bm_ws/install/serial_motor_demo_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/maker', 'OLDPWD': '/home/maker', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1535', 'SYSTEMD_EXEC_PID': '1698', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8016', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'maker', 'JOURNAL_STREAM': '8:26976', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'maker', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/maker/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/maker-virtual-machine:@/tmp/.ICE-unix/1666,unix/maker-virtual-machine:/tmp/.ICE-unix/1666', 'INVOCATION_ID': '4c7fbdbf7bcd4c129e35c8b9bf5724b2', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.1JFQ52', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/maker/bm_ws/install/serial_motor_demo_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:0d19c3ce-c0f8-4fff-b10c-99a43c406314', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/maker/bm_ws/build/serial_motor_demo', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/maker/bm_ws/build/serial_motor_demo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/maker/bm_ws/install/serial_motor_demo/lib/python3.10/site-packages:/home/maker/bm_ws/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/maker/bm_ws/install/serial_motor_demo_msgs'}, 'shell': False}
+[12.001933] (-) TimerEvent: {}
+[12.103983] (-) TimerEvent: {}
+[12.205132] (-) TimerEvent: {}
+[12.306345] (-) TimerEvent: {}
+[12.406977] (-) TimerEvent: {}
+[12.424243] (serial_motor_demo) StderrLine: {'line': b"/home/maker/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[12.424707] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[12.425329] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.425460] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[12.426042] (serial_motor_demo) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[12.426166] (serial_motor_demo) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[12.426263] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.426746] (serial_motor_demo) StderrLine: {'line': b'        By 2026-Mar-03, you need to update your project and remove deprecated calls\n'}
+[12.426879] (serial_motor_demo) StderrLine: {'line': b'        or your builds will no longer be supported.\n'}
+[12.426973] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.427066] (serial_motor_demo) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[12.427159] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[12.427250] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.427435] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[12.427538] (serial_motor_demo) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[12.482797] (serial_motor_demo) StderrLine: {'line': b"/home/maker/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[12.483210] (serial_motor_demo) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[12.507113] (-) TimerEvent: {}
+[12.592950] (serial_motor_demo) StderrLine: {'line': b"/home/maker/.local/lib/python3.10/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'script-dir' in 'develop' (setup.cfg), please use the underscore name 'script_dir' instead.\n"}
+[12.593189] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[12.593361] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.593480] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[12.593696] (serial_motor_demo) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[12.593875] (serial_motor_demo) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[12.594456] (serial_motor_demo) StderrLine: {'line': b'        (Affected: serial_motor_demo).\n'}
+[12.594586] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.594686] (serial_motor_demo) StderrLine: {'line': b'        By 2026-Mar-03, you need to update your project and remove deprecated calls\n'}
+[12.595069] (serial_motor_demo) StderrLine: {'line': b'        or your builds will no longer be supported.\n'}
+[12.595207] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.595300] (serial_motor_demo) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[12.595506] (serial_motor_demo) StderrLine: {'line': b'        ********************************************************************************\n'}
+[12.595913] (serial_motor_demo) StderrLine: {'line': b'\n'}
+[12.596039] (serial_motor_demo) StderrLine: {'line': b'!!\n'}
+[12.596131] (serial_motor_demo) StderrLine: {'line': b'  opt = self._enforce_underscore(opt, section)\n'}
+[12.607935] (-) TimerEvent: {}
+[12.713110] (-) TimerEvent: {}
+[12.814146] (-) TimerEvent: {}
+[12.915290] (-) TimerEvent: {}
+[13.016717] (-) TimerEvent: {}
+[13.117628] (-) TimerEvent: {}
+[13.182396] (serial_motor_demo) StdoutLine: {'line': b'running develop\n'}
+[13.218108] (-) TimerEvent: {}
+[13.319285] (-) TimerEvent: {}
+[13.420338] (-) TimerEvent: {}
+[13.521119] (-) TimerEvent: {}
+[13.621700] (-) TimerEvent: {}
+[13.723171] (-) TimerEvent: {}
+[13.824183] (-) TimerEvent: {}
+[13.925828] (-) TimerEvent: {}
+[14.026862] (-) TimerEvent: {}
+[14.047883] (serial_motor_demo) StdoutLine: {'line': b'running egg_info\n'}
+[14.118171] (serial_motor_demo) StdoutLine: {'line': b'writing serial_motor_demo.egg-info/PKG-INFO\n'}
+[14.120177] (serial_motor_demo) StdoutLine: {'line': b'writing dependency_links to serial_motor_demo.egg-info/dependency_links.txt\n'}
+[14.121860] (serial_motor_demo) StdoutLine: {'line': b'writing entry points to serial_motor_demo.egg-info/entry_points.txt\n'}
+[14.124835] (serial_motor_demo) StdoutLine: {'line': b'writing requirements to serial_motor_demo.egg-info/requires.txt\n'}
+[14.127626] (-) TimerEvent: {}
+[14.128130] (serial_motor_demo) StdoutLine: {'line': b'writing top-level names to serial_motor_demo.egg-info/top_level.txt\n'}
+[14.228351] (-) TimerEvent: {}
+[14.255906] (serial_motor_demo) StdoutLine: {'line': b"reading manifest file 'serial_motor_demo.egg-info/SOURCES.txt'\n"}
+[14.274219] (serial_motor_demo) StdoutLine: {'line': b"writing manifest file 'serial_motor_demo.egg-info/SOURCES.txt'\n"}
+[14.328978] (-) TimerEvent: {}
+[14.335283] (serial_motor_demo) StdoutLine: {'line': b'running build_ext\n'}
+[14.336122] (serial_motor_demo) StdoutLine: {'line': b'Creating /home/maker/bm_ws/install/serial_motor_demo/lib/python3.10/site-packages/serial-motor-demo.egg-link (link to .)\n'}
+[14.342189] (serial_motor_demo) StdoutLine: {'line': b'Installing driver script to /home/maker/bm_ws/install/serial_motor_demo/lib/serial_motor_demo\n'}
+[14.344314] (serial_motor_demo) StdoutLine: {'line': b'Installing gui script to /home/maker/bm_ws/install/serial_motor_demo/lib/serial_motor_demo\n'}
+[14.348427] (serial_motor_demo) StdoutLine: {'line': b'\n'}
+[14.349335] (serial_motor_demo) StdoutLine: {'line': b'Installed /home/maker/bm_ws/build/serial_motor_demo\n'}
+[14.350150] (serial_motor_demo) StdoutLine: {'line': b'running symlink_data\n'}
+[14.429733] (-) TimerEvent: {}
+[14.452109] (serial_motor_demo) CommandEnded: {'returncode': 0}
+[14.511793] (serial_motor_demo) JobEnded: {'identifier': 'serial_motor_demo', 'rc': 0}
+[14.515643] (-) EventReactorShutdown: {}

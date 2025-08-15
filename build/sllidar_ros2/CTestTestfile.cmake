@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/maker/bm_ws/src/sllidar_ros2/sllidar_ros2
+# Source directory: /home/maker/bm_ws/src/sllidar_ros2
 # Build directory: /home/maker/bm_ws/build/sllidar_ros2
 # 
 # This file includes the relevant testing commands required for 

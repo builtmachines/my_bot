@@ -1,5 +1,5 @@
 CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o: \
- /home/maker/bm_ws/src/sllidar_ros2/sllidar_ros2/src/sllidar_client.cpp \
+ /home/maker/bm_ws/src/sllidar_ros2/src/sllidar_client.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal \

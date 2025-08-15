@@ -1,4 +1,4 @@
-# Install script for directory: /home/maker/bm_ws/src/sllidar_ros2/sllidar_ros2
+# Install script for directory: /home/maker/bm_ws/src/sllidar_ros2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
