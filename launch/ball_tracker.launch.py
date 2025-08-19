@@ -8,7 +8,7 @@ from launch.substitutions import PythonExpression
 from launch.actions import DeclareLaunchArgument
 
 
-def generate_launch_description():
+def generate_launch_description():f
 
     my_package_name='my_bot'
     sim_mode = LaunchConfiguration('sim_mode')
@@ -21,7 +21,7 @@ def generate_launch_description():
 
     tracker_launch = IncludeLaunchDescription(
                 PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory('ball_tracker'), 'launch', 'ball_tracker.launch.py')]),
+                    get_package_share_directory('my_bot'), 'launch', 'ball_tracker.launch.py')]),
                     launch_arguments={'params_file': params_path,
                                     'image_topic': '/camera/image_raw',
                                     'cmd_vel_topic': '/cmd_vel_tracker',
