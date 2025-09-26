@@ -1,38 +1,37 @@
 twist_mux:
   ros__parameters:
-    output: /cmd_vel_out          # This is the merged output topic
     topics:
       navigation:
-        topic   : /cmd_vel        # Nav2 commands
+        topic   : cmd_vel
         timeout : 0.5
         priority: 10
       joystick:
-        topic   : /cmd_vel_joy    # Joystick commands
+        topic   : cmd_vel_joy
         timeout : 0.5
         priority: 100
-      keyboard:
-        topic   : /cmd_vel_key    # Teleop Twist Keyboard commands
-        timeout : 0.5
-        priority: 90
-
-
-
-
-
 
 
 #twist_mux:
- # ros__parameters:
-  #  topics:
-   #   navigation:
-    #    topic   : cmd_vel
-     #   timeout : 0.5
-      #  priority: 10
-      #tracker:
-       # topic   : cmd_vel_key
+  #ros__parameters:
+    #output: /cmd_vel_out          # This is the merged output topic
+    #topics:
+      #navigation:
+        #topic   : /cmd_vel        # Nav2 commands
         #timeout : 0.5
-        #priority: 20
-      #joystick:
-       # topic   : cmd_vel_joy
+        #priority: 10
+       #joystick:
+        #topic   : /cmd_vel_joy    # Joystick commands
         #timeout : 0.5
-        #priority: 1003
+        #priority: 100
+      #keyboard:
+        #topic   : /cmd_vel_key    # Teleop Twist Keyboard commands
+        #timeout : 0.5
+        #priority: 90
+
+
+
+
+
+
+
+
